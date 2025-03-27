@@ -25,17 +25,6 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <h1>Home Page</h1>
-        {/* <h2>This is {name} from Ahmedabad</h2> */}
-        <h2>This is {name2} from Ahmedabad</h2>
-        
-
-        {/* below both thingperforms same thing what is the difference we will see it in future */}
-        {/* <InnerComp/> */}
-        {InnerComp()}
-
-        {/*  function call in nextJS */}
-        <button onClick={() => apple()}>Click me</button>
-
       </main>
       
     </div>
