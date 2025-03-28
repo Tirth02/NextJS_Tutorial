@@ -11,9 +11,9 @@ const Login = () => {
   return (
     <div>
       <br/>
-      <button onClick={() => router.push("/")}>Back to Home</button>
+      <button onClick={() => router.push("/")}><span>&larr;</span> Home</button>
       <br/>
-      <h1>Login Page</h1>
+      <h1 className='heading'>Login Page</h1>
       <br/>
       <br/>
       <button onClick={() => navigate("studentlogin")}>Login For student</button>

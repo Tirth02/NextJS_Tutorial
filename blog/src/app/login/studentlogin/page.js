@@ -5,7 +5,7 @@ const StudentLogin = (page) => {
     
   return (
     <div>
-      <h1>Login Page for student</h1>
+      <h1 className='heading'>Login Page for student</h1>
       
     </div>
   )
