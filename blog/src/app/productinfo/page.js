@@ -1,4 +1,5 @@
 import React from 'react'
+import ProductButton from './product';
 
 async function fetchData() {
     let data = await fetch("https://dummyjson.com/products");
@@ -16,16 +17,17 @@ const ProductInfo = async () => {
             <h1>Product List</h1>
             {
                 products.map((item) =>(
-                    <div><h3>Name: {item.title}</h3></div>
+                    <div>
+                        <br/>  
+                        <h3>Name: {item.title}</h3>
+                        <br/>
+                        <ProductButton price={item.price}/>  
+                    </div>
                 ))
             }
         </div>
     )
-    return (
-    <div>
-      
-    </div>
-  )
+    
 }
 
 export default ProductInfo
