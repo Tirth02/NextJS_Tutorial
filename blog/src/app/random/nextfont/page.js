@@ -15,4 +15,11 @@ const NextFont = () => {
   )
 }
 
+export const generateMetadata = () =>{
+    return{
+      title: "Items page Title",
+      description: "Mobile Phones, Iphone 16 pro max, LED, Bulb"
+    }
+  }
+
 export default NextFont
