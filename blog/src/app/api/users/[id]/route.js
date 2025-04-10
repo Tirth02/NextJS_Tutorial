@@ -10,3 +10,16 @@ export const GET = (request, content) => {
     { status: 200 }
   );
 };
+
+export const PUT = async(request,content) =>{
+  let payload = await request.json();
+  payload.id = content.params.id;
+
+  if(!payload.id || !payload.name || !payload.age || !payload.email)
+  {
+    return NextResponse.json({result:"request data is not valid",success:400})
+  }
+
+  return NextResponse.json({result:payload,success:true},{status:200});
+  
+}

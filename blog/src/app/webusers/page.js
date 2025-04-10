@@ -17,6 +17,8 @@ const UserList = async() => {
         <Link href={`webusers/${item.id}`}>{item.name}</Link>
         </div>
       ))}
+      <br/>
+      <Link href="webusers/createuser">Create New User</Link>
     </div>
   )
 }
